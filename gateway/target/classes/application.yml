@@ -1,0 +1,7 @@
+server.port: 8000
+spring.cloud.gateway:
+  routes:
+  - id: demo
+    uri: http://localhost:8080
+    predicates:
+    - Path=/api/customer
